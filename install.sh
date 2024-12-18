@@ -3,8 +3,6 @@
 # This script creates symlinks from the home directory to any desired dotfiles in $HOME/dotfiles
 # And also installs MacOS Software
 # And also installs Homebrew Packages and Casks (Apps)
-# And also sets up VS Code
-# And also sets up Sublime Text
 ############################
 
 # dotfiles directory
@@ -28,11 +26,5 @@ done
 
 # Run the Homebrew Script
 ./brew.sh
-
-# Run VS Code Script
-./vscode.sh
-
-# Run the Sublime Script
-./sublime.sh
 
 echo "Installation Complete!"
