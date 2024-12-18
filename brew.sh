@@ -29,16 +29,13 @@ brew cleanup
 
 # Define an array of packages to install using Homebrew.
 packages=(
-    "python"
-    "tcl-tk"
-    "python-tk"
     "bash"
     "zsh"
     "git"
-    "tree"
-    "pylint"
-    "black"
-    "node"
+    "ca-certificates"
+    "swiftformat"
+    "swiftlint"
+    "zsh-autosuggestions"
 )
 
 # Loop over the array to install each application.
@@ -90,27 +87,30 @@ else
     echo "Git user.email is already set to '$current_email'. Skipping configuration."
 fi
 
-# Create the tutorial virtual environment I use frequently
-$(brew --prefix)/bin/python3 -m venv "${HOME}/tutorial"
-
-# Install Prettier, which I use in both VS Code and Sublime Text
-$(brew --prefix)/bin/npm install --global prettier
-
 # Define an array of applications to install using Homebrew Cask.
 apps=(
     "google-chrome"
-    "firefox"
-    "brave-browser"
+    "zen-browser"
+    "bitwarden"
     "sublime-text"
-    "visual-studio-code"
-    "spotify"
+    "stats"
+    "raycast"
     "discord"
-    "google-drive"
-    "gimp"
+    "github"
+    "obsidian"
+    "sf-symbols"
+    "logitech-g-hub"
+    "sublime-merge"
+    "whatsapp"
+    "slack"
+    "microsoft-teams"
+    "webex"
+    "deepl"
+    "stermio"
+    "cloudflare-warp"
+    "localsend"
     "vlc"
-    "rectangle"
-    "postman"
-    "keyboardcleantool"
+    "omnidisksweeper"
 )
 
 # Loop over the array to install each application.
@@ -125,36 +125,36 @@ done
 
 # Install fonts
 # Tap the Homebrew font cask repository if not already tapped
-brew tap | grep -q "^homebrew/cask-fonts$" || brew tap homebrew/cask-fonts
+# brew tap | grep -q "^homebrew/cask-fonts$" || brew tap homebrew/cask-fonts
 
-fonts=(
-    "font-source-code-pro"
-    "font-lato"
-    "font-montserrat"
-    "font-nunito"
-    "font-open-sans"
-    "font-oswald"
-    "font-poppins"
-    "font-raleway"
-    "font-roboto"
-)
+# fonts=(
+#    "font-source-code-pro"
+#    "font-lato"
+#    "font-montserrat"
+#    "font-nunito"
+#    "font-open-sans"
+#    "font-oswald"
+#    "font-poppins"
+#    "font-raleway"
+#    "font-roboto"
+# )
 
-for font in "${fonts[@]}"; do
-    # Check if the font is already installed
-    if brew list --cask | grep -q "^$font\$"; then
-        echo "$font is already installed. Skipping..."
-    else
-        echo "Installing $font..."
-        brew install --cask "$font"
-    fi
-done
+# for font in "${fonts[@]}"; do
+#    # Check if the font is already installed
+#    if brew list --cask | grep -q "^$font\$"; then
+#        echo "$font is already installed. Skipping..."
+#    else
+#        echo "Installing $font..."
+#        brew install --cask "$font"
+#    fi
+# done
 
 # Once fonts are installed, import your Terminal Profile
-echo "Import your terminal settings..."
-echo "Terminal -> Settings -> Profiles -> Import..."
-echo "Import from ${HOME}/dotfiles/settings/Pro.terminal"
-echo "Press enter to continue..."
-read
+# echo "Import your terminal settings..."
+# echo "Terminal -> Settings -> Profiles -> Import..."
+# echo "Import from ${HOME}/dotfiles/settings/Pro.terminal"
+# echo "Press enter to continue..."
+# read
 
 # Update and clean up again for safe measure
 brew update
@@ -168,14 +168,62 @@ read
 echo "Connect Google Account (System Settings -> Internet Accounts). Press enter to continue..."
 read
 
-echo "Sign in to Spotify. Press enter to continue..."
+echo "Sign in to Zen Browser. Press enter to continue..."
+read
+
+echo "Sign in to Bitwarden. Press enter to continue..."
+read
+
+echo "Open Sublime Merge and and set up your preferences. Press enter to continue..."
+read
+
+echo "Installed Stats. Press enter to continue..."
+read
+
+echo "Sign in to Raycast. Import your Raycast config located in ~/dotfiles/settings/RaycastConfig.rayconfig. Then set up your raycast scripts located in ~/dotfiles/settings/ (open-business-apps.sh || close-business-apps.sh || speedtest.sh) Press enter to continue..."
 read
 
 echo "Sign in to Discord. Press enter to continue..."
 read
 
-echo "Open Rectangle and give it necessary permissions. Press enter to continue..."
+echo "Sign in to GitHub. Press enter to continue..."
 read
 
-echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json. Press enter to continue..."
+echo "Sign in to Obsidian. Press enter to continue..."
+read
+
+echo "Installed SF Symbols. Press enter to continue..."
+read
+
+echo "Configure Logitech G Hub for your devices. Press enter to continue..."
+read
+
+echo "Installed WhatsApp. Press enter to continue..."
+read
+
+echo "Sign in to Slack. Press enter to continue..."
+read
+
+echo "Sign in to Microsoft Teams. Press enter to continue..."
+read
+
+echo "Sign in to Webex. Press enter to continue..."
+read
+
+echo "Sign in to DeepL. Press enter to continue..."
+read
+
+echo "Open Stremio and configure your settings. Press enter to continue..."
+read
+
+echo "Installed Cloudflare Warp. Press enter to continue..."
+read
+
+echo "Installed Localsend. Press enter to continue..."
+read
+
+echo "Installed VLC. Press enter to continue..."
+read
+
+echo "Installed OmniDiskSweeper. Press enter to continue..."
 read
