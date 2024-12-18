@@ -28,15 +28,6 @@ prompt_git() {
     fi
 }
 
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-prompt_venv() {
-    if [[ -n "$VIRTUAL_ENV" ]]; then
-        # Extract the last directory name in the $VIRTUAL_ENV path
-        venv_name=$(basename "$VIRTUAL_ENV")
-        printf "\n%b(%s)\n" "${steel_blue}" "${venv_name}"
-    fi
-}
-
 # Using tput for colors and formatting.
 tput sgr0 # reset colors
 bold=$(tput bold)

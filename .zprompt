@@ -1,7 +1,6 @@
 
 source "${HOME}/dotfiles/.shared_prompt"
 
-PS1="\$(prompt_venv)" # virtual environment
 PS1+="%{${bold}%}"$'\n' # newline
 PS1+="%{${userStyle}%}%n" # username
 PS1+="%{${white}%} at "
