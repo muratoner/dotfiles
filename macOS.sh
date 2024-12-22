@@ -18,34 +18,34 @@ defaults write com.apple.dock "orientation" -string "left" && killall Dock
 # https://macos-defaults.com/dock/tilesize.html
 defaults write com.apple.dock "tilesize" -int "75" && killall Dock
 
-# Show recently used apps in a separate section of the Dock.
+# Don't show recently used apps in a separate section of the Dock.
 # https://macos-defaults.com/dock/show-recents.html
 defaults write com.apple.dock "show-recents" -bool "false" && killall Dock
 
 ## Add Persistent Apps
-defaults write com.apple.dock persistent-apps -array
+# defaults write com.apple.dock persistent-apps -array
 
 # Add system icons
-declare -a sys_icons=(
-    "/Applications/System Settings"
-    "/Applications/Launchpad"
-    )
-for sys_icon in "${sys_icons[@]}"; do
-    defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System${sys_icon}.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-done
+# declare -a sys_icons=(
+#     "/Applications/System Settings"
+#     "/Applications/Launchpad"
+#     )
+# for sys_icon in "${sys_icons[@]}"; do
+#     defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System${sys_icon}.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
+# done
 
-## Add application icons
-declare -a icons=("Zen Browser" "Microsoft Teams" "Xcode-16.0.0" "Sublime Merge" "Slack" "Terminal" "Obsidian")
-for icon in "${icons[@]}"; do
-    if [ -d "/Applications/${icon}.app" ]; then
-        if ! defaults read com.apple.dock | grep "${icon}"; then
-            defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/${icon}.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-        fi
-    fi
-done
+# ## Add application icons
+# declare -a icons=("Zen Browser" "Microsoft Teams" "Xcode-16.0.0" "Sublime Merge" "Slack" "Terminal" "Obsidian")
+# for icon in "${icons[@]}"; do
+#     if [ -d "/Applications/${icon}.app" ]; then
+#         if ! defaults read com.apple.dock | grep "${icon}"; then
+#             defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/${icon}.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
+#         fi
+#     fi
+# done
 
 ## Restart Dock
-killall Dock
+# killall Dock
 
 # -- Finder Defaults --
 
