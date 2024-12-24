@@ -3,8 +3,6 @@ source "${HOME}/dotfiles/.shared_prompt"
 
 PS1+="%{${bold}%}"$'\n' # newline
 PS1+="%{${userStyle}%}%n" # username
-PS1+="%{${white}%} at "
-PS1+="%{${hostStyle}%}%m" # host
 PS1+="%{${white}%} in "
 PS1+="%{${green}%}%c" # working directory
 PS1+="\$(prompt_git)" # Git repository details
