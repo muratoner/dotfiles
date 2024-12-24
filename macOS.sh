@@ -25,6 +25,9 @@ defaults write com.apple.dock "show-recents" -bool "false" && killall Dock
 ## Add Persistent Apps to Dock
 ./add-dock-items.sh
 
+## Add Chromium browser as a default web browser. (Currently im using Zen Browser which is based on firefox)
+# open -a "Google Chrome" --args --make-default-browser
+
 # -- Finder Defaults --
 
 # Show hidden files in the Finder. You can toggle the value using ⌘ + ⇧ + .
