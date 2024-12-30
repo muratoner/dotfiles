@@ -2,15 +2,17 @@
 
 This repository contains scripts and configuration files to set up a development environment for macOS. It's tailored for software development, focusing on a clean, minimal, and efficient setup.
 
-## YouTube Video Walkthrough
-
-Click on the image below to watch the video on YouTube:
-
-[![Watch the video](https://img.youtube.com/vi/ra5kMCXO-6I/0.jpg)](https://youtu.be/ra5kMCXO-6I)
-
 ## Overview
 
-The setup includes automated scripts for installing essential software, configuring Bash and Zsh shells, and setting up Sublime Text and Visual Studio Code editors. This guide will help you replicate my development environment on your machine if you desire to do so.
+# macOS Development Environment Setup
+
+An automated setup for a macOS development environment, including:
+- Essential development tools and software
+- Shell configurations (Bash & Zsh)
+- Homebrew packages and cask applications 
+- System preferences and defaults
+
+This repository contains scripts and configurations to replicate my personal development environment. Follow the installation instructions below to set up your machine with the same tooling and preferences.
 
 ## Important Note Before Installation
 
@@ -38,7 +40,7 @@ By using these scripts, you acknowledge and accept the risk of potential data lo
 
 1. Clone the repository to your local machine:
    ```sh
-   git clone https://github.com/CoreyMSchafer/dotfiles.git ~/dotfiles
+   git clone https://github.com/aalpercem/dotfiles.git ~/dotfiles
    ```
 2. Navigate to the `dotfiles` directory:
    ```sh
@@ -46,7 +48,7 @@ By using these scripts, you acknowledge and accept the risk of potential data lo
    ```
 3. Run the installation script:
    ```sh
-   ./install.sh
+   sudo ./install.sh
    ```
 
 This script will:
@@ -54,7 +56,7 @@ This script will:
 -  Create symlinks for dotfiles (`.bashrc`, `.zshrc`, etc.)
 -  Run macOS-specific configurations
 -  Install Homebrew packages and casks
--  Configure Sublime Text and Visual Studio Code
+-  Configure system preferences and defaults
 
 ## Configuration Files
 
@@ -64,14 +66,14 @@ This script will:
 -  `.bash_profile: Setting system-wide environment variables
 -  `.aliases`: Aliases for common commands. Some are personalized to my machines specifically (e.g. the 'yt' alias opening my YouTube Scripts')
 -  `.private`: This is a file you'll create locally to hold private information and shouldn't be uploaded to version control
--  `settings/`: Directory containing editor settings and themes for Sublime Text and Visual Studio Code.
+-  `settings/`: Directory containing general app configurations and settings.
 
 ### Customizing Your Setup
 
 You're encouraged to modify the scripts and configuration files to suit your preferences. Here are some tips for customization:
 
 -  **Dotfiles**: Edit `.shared_prompt`, `.zprompt`, `.bash_prompt` to add or modify shell configurations.
--  **Sublime Text and VS Code**: Adjust settings in the `settings/` directory to change editor preferences and themes.
+- Adjust settings in the `settings/` directory to change preferences and themes.
 
 ## Contributing
 
@@ -83,5 +85,6 @@ This project is licensed under the MIT License - see the [LICENSE-MIT.txt](LICEN
 
 ## Acknowledgments
 
--  I originally forked this from [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles)
+Originally forked from [CoreyMSchafer's dotfiles](https://github.com/CoreyMSchafer/dotfiles), which was itself forked from [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles)
+
 -  Thanks to all the open-source projects used in this setup.
