@@ -38,6 +38,10 @@ defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Find
 # https://macos-defaults.com/finder/fxpreferredviewstyle.html
 defaults write com.apple.finder "FXPreferredViewStyle" -string "icnv" && killall Finder
 
+# Show path bar in the bottom of the Finder windows
+# https://macos-defaults.com/finder/showpathbar.html
+defaults write com.apple.finder "ShowPathbar" -bool "true" && killall Finder
+
 # Choose whether to display a warning when changing a file extension.
 # Do not display the warning
 # https://macos-defaults.com/finder/fxenableextensionchangewarning.html
@@ -93,6 +97,8 @@ defaults write com.apple.TextEdit "RichText" -bool "false" && killall TextEdit
 # Add Bluetooth to Menu Bar for battery percentages
 defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true && killall ControlCenter
 
+# -- Set Desktop Wallpapper --
+
 # Get the absolute path to the image
 IMAGE_PATH="${HOME}/dotfiles/settings/DesktopWallpaper.jpg"
 
@@ -107,3 +113,26 @@ tell application "System Events"
     end repeat
 end tell
 EOF
+
+# -- Reminders for full setup --
+
+echo "To set the 'Show Desktop' action in the bottom-left corner, please go to System Settings > Desktop & Dock > Hot Corners... and set the left-bottom corner to 'Show Desktop'."
+read
+
+echo "To set the 'Dock Magnification', please go to System Settings > Desktop & Dock > Magnification and set it to 'Large'."
+read
+
+echo "To enable 'Tap to Click', go to System Settings > Trackpad > Point & Click and set it to true 'Tap to Click'."
+read
+
+echo "To adjust the display resolution and position, go to System Settings > Displays and modify the resolution and arrangement settings."
+read
+
+echo "To add the 'cemozturk' directory to the Dock, open Finder, navigate to the 'cemozturk' directory, right-click on it, and select 'Add to Dock'."
+read
+
+echo "To add the 'cemozturk' or 'Developer' directory to the Finder Sidebar, open Finder, go to Finder Settings > Sidebar, and check 'User' under the Favorites section."
+read
+
+echo "Don't forget to create additional desktops for each display"
+read

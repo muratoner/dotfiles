@@ -95,21 +95,24 @@ apps=(
     "google-chrome"
     "zen-browser"
     "bitwarden"
-    "sublime-text"
     "stats"
     "raycast"
     "discord"
+    "deepl"
     "github"
     "obsidian"
     "sf-symbols"
     "logitech-g-hub"
+    "xcodes"
+    "warp"
     "sublime-merge"
+    "anythingllm"
     "whatsapp"
     "slack"
+    "spotify"
     "microsoft-teams"
     "webex"
-    "deepl"
-    "stermio"
+    "stremio"
     "cloudflare-warp"
     "localsend"
     "vlc"
@@ -168,9 +171,6 @@ brew cleanup
 echo "Sign in to Google Chrome. Press enter to continue..."
 read
 
-echo "Connect Google Account (System Settings -> Internet Accounts). Press enter to continue..."
-read
-
 echo "Sign in to Zen Browser. Press enter to continue..."
 read
 
@@ -198,13 +198,19 @@ read
 echo "Installed SF Symbols. Press enter to continue..."
 read
 
-echo "Configure Logitech G Hub for your devices. Press enter to continue..."
+echo "Installed Xcodes. Press enter to continue..."
+read
+
+echo "Configure Logitech G Hub for your devices. Don't forget to grant input monitoring access to Logitech G Hub. Press Enter to continue..."
 read
 
 echo "Installed WhatsApp. Press enter to continue..."
 read
 
 echo "Sign in to Slack. Press enter to continue..."
+read
+
+echo "Sign in to Spotify. Press enter to continue..."
 read
 
 echo "Sign in to Microsoft Teams. Press enter to continue..."
