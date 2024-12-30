@@ -68,10 +68,11 @@ This script will:
 
 ### Customizing Your Setup
 
-You're encouraged to modify the scripts and configuration files to suit your preferences. Here are some tips for customization:
+You're encouraged to modify the scripts and configuration files to suit your preferences. Here are some tips for customization based on the changes made in the project:
 
 -  **Dotfiles**: Edit `.shared_prompt`, `.zprompt`, `.bash_prompt` to add or modify shell configurations.
-- Adjust settings in the `settings/` directory to change preferences and themes.
+- **Shell Scripts**: The `.sh` files in the project, such as `brew.sh` and `macOS.sh`, contain various customizations for setting up the development environment. You can modify these scripts to tailor the setup according to your preferences.
+- **Settings Folder**: You can also add your own configuration files to the `settings/` directory to further customize your development environment.
 
 ## Contributing
 
