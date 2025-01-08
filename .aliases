@@ -1,7 +1,7 @@
 # Shortcuts
 
-alias dev="subl '$HOME/Developer/business/pago-ios/'"
-alias muse="cd '$HOME/Library/Mobile\ Documents/com~apple~CloudDocs/'"
+alias muse="cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/Muse"
+alias blog="cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/cemblog"
 
 # Detect which `ls` flavor is in use
 if ls --color >/dev/null 2>&1; then # GNU `ls`
