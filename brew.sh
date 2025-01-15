@@ -91,30 +91,19 @@ fi
 
 # Define an array of applications to install using Homebrew Cask.
 apps=(
-    "google-chrome"
-    "zen-browser"
-    "bitwarden"
-    "logitech-g-hub"
+    "arc" # Chromium based browser
     "raycast"
-    "warp"
     "obsidian"
     "stats"
     "xcodes"
-    "github"
-    "sublime-merge"
-    "anythingllm"
     "whatsapp"
-    "slack"
     "spotify"
     "microsoft-teams"
-    "webex"
     "stremio"
     "sf-symbols"
     "cloudflare-warp"
     "localsend"
-    "vlc"
     "omnidisksweeper"
-    "discord"
     "deepl"
 )
 
