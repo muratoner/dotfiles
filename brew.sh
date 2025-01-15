@@ -36,9 +36,8 @@ packages=(
     "hugo"
     "node"
     "ca-certificates"
-    "swiftformat"
-    "swiftlint"
     "zsh-autosuggestions"
+    "ngrok"
 )
 
 # Loop over the array to install each application.
