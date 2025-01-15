@@ -199,7 +199,7 @@ echo "Sign in to GitHub Desktop. Press enter to continue..."
 read
 
 echo "Open Sublime Merge and and set up your preferences. Press enter to continue..."
-rea
+read
 
 echo "Sign in to AnythingLLM. Press enter to continue..."
 read
