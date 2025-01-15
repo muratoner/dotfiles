@@ -99,12 +99,6 @@ apps=(
     "whatsapp"
     "spotify"
     "microsoft-teams"
-    "stremio"
-    "sf-symbols"
-    "cloudflare-warp"
-    "localsend"
-    "omnidisksweeper"
-    "deepl"
 )
 
 # Loop over the array to install each application.
@@ -156,46 +150,16 @@ brew upgrade
 brew upgrade --cask
 brew cleanup
 
-echo "Sign in to Google Chrome. Press enter to continue..."
-read
-
-echo "Sign in to Zen Browser. Press enter to continue..."
-read
-
-echo "Sign in to Bitwarden. Press enter to continue..."
-read
-
-echo "Configure Logitech G Hub for your devices. Don't forget to grant input monitoring access to Logitech G Hub. Press Enter to continue..."
-read
-
-echo "Sign in to Raycast. Import your Raycast config located in ~/dotfiles/settings/RaycastConfig.rayconfig. Then set up your Raycast scripts located in ~/dotfiles/settings/. Move the following .sh files to the raycast-scripts folder inside your Developer directory: open-business-apps.sh, close-business-apps.sh, speedtest.sh. Press enter to continue..."
-read
-
-echo "Installed Warp. Press enter to continue..."
-read
-
-echo "Sign in to Obsidian. Press enter to continue..."
-read
-
-echo "Installed Stats. Press enter to continue..."
+echo "Sign in to Arc Browser. Press enter to continue..."
 read
 
 echo "Installed Xcodes. Press enter to continue..."
-read
-
-echo "Sign in to GitHub Desktop. Press enter to continue..."
-read
-
-echo "Open Sublime Merge and and set up your preferences. Press enter to continue..."
 read
 
 echo "Sign in to AnythingLLM. Press enter to continue..."
 read
 
 echo "Installed WhatsApp. Press enter to continue..."
-read
-
-echo "Sign in to Slack. Press enter to continue..."
 read
 
 echo "Sign in to Spotify. Press enter to continue..."
@@ -207,26 +171,5 @@ read
 echo "Sign in to Webex. Press enter to continue..."
 read
 
-echo "Open Stremio and configure your settings. Press enter to continue..."
-read
-
-echo "Installed SF Symbols. Press enter to continue..."
-read
-
-echo "Installed Cloudflare Warp. Press enter to continue..."
-read
-
-echo "Installed Localsend. Press enter to continue..."
-read
-
-echo "Installed VLC. Press enter to continue..."
-read
-
 echo "Installed OmniDiskSweeper. Press enter to continue..."
-read
-
-echo "Sign in to Discord. Press enter to continue..."
-read
-
-echo "Sign in to DeepL. Press enter to continue..."
 read
